@@ -1,0 +1,106 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  background-color: black;
+}
+/***************************************** HEADER ******************************************************/
+header.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 605px;
+  border-bottom: 1px solid #33A8DB;
+  position: relative;
+}
+
+.container-img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.elipse {
+  position: absolute;
+  width: 268px;
+  height: 268px;
+  top: 5px;
+  background: rgba(0, 0, 0, 0.7); /* Color más oscuro con mayor opacidad */
+  border-radius: 50%;
+}
+
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(
+      to bottom, 
+      rgba(100, 100, 100, 0)  0%, 
+      rgba(255, 255, 255, 0.1) 30%, 
+      rgba(255, 255, 255, 0.1) 50%, 
+      rgba(255, 255, 255, 0.1) 70%, 
+      rgba(100, 100, 100, 0) 100%
+  );
+}
+
+
+.imagen-principal {
+  position: absolute;
+  width: 248px;
+  height: 214px;
+  top: 27px;
+}
+
+h1 {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  top: 300px;
+}
+
+.texto-header {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  height: 46px;
+  width: 510px;
+  top: 360px;
+}
+
+button {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 18.78px;
+  padding: 20px 80px;
+  border: 1px solid #1472B7;
+  top: 450px;
+}
+
+/********************************************* MAIN ******************************************************/
